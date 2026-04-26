@@ -51,6 +51,14 @@ window.PORTFOLIO_DATA = {
   ],
   "projects": [
     {
+      "title": "ENSOMBRECIDA: aboard",
+      "status": "Published",
+      "description": "My first comic, a dark sea-bound story now available as an ebook on Amazon.",
+      "image": "assets/ensombrecida-cover.jpg",
+      "link": "https://www.amazon.com.br/ENSOMBRECIDA-abordo-Josu%C3%A9-Lemos-Mesquita-ebook/dp/B0FZF7KZNW",
+      "linkLabel": "Read on Amazon"
+    },
+    {
       "title": "Cosmic Series",
       "status": "In development",
       "description": "A set of visual pieces about imaginary astronomy, ruins, and silence.",
