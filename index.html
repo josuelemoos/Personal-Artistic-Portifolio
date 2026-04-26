@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Minimalist artistic portfolio with artwork, projects, biography, and contact links."
+    >
+    <title>Artistic Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Back to top">Portfolio</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#artworks">Artworks</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero__image" aria-hidden="true"></div>
+        <div class="hero__content">
+          <p class="hero__eyebrow"></p>
+          <h1 class="hero__title"></h1>
+          <p class="hero__description"></p>
+          <div class="hero__actions">
+            <a class="button hero__primary" href="#artworks"></a>
+            <a class="button button--ghost hero__secondary" href="#contact"></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="artworks" aria-labelledby="artworks-title">
+        <div class="section__heading">
+          <p>Gallery</p>
+          <h2 id="artworks-title">Recent Artworks</h2>
+        </div>
+        <div class="works-grid"></div>
+      </section>
+
+      <section class="section section--split" id="about" aria-labelledby="about-title">
+        <div class="section__heading">
+          <p>Artist</p>
+          <h2 id="about-title">About Me</h2>
+        </div>
+        <div class="about">
+          <p class="about__role"></p>
+          <p class="about__bio"></p>
+          <div class="about__text"></div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section__heading">
+          <p>Process</p>
+          <h2 id="projects-title">Projects</h2>
+        </div>
+        <div class="projects-list"></div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="section__heading">
+          <p>Contact</p>
+          <h2 id="contact-title">Let's talk</h2>
+        </div>
+        <div>
+          <p class="contact__intro"></p>
+          <div class="contact-links"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Artistic Portfolio</span>
+      <span>Are you scared of the Dark?</span>
+    </footer>
+
+    <div class="artwork-modal" hidden>
+      <button class="artwork-modal__backdrop" type="button" aria-label="Close artwork preview"></button>
+      <figure class="artwork-modal__content" role="dialog" aria-modal="true" aria-labelledby="artwork-modal-title">
+        <button class="artwork-modal__close" type="button" aria-label="Close artwork preview">Close</button>
+        <div class="artwork-modal__viewer">
+          <img class="artwork-modal__image" src="" alt="">
+        </div>
+        <figcaption class="artwork-modal__caption">
+          <span class="artwork-modal__meta"></span>
+          <h2 id="artwork-modal-title"></h2>
+          <p></p>
+        </figcaption>
+      </figure>
+    </div>
+
+    <script src="scripts/content.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

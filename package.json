@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "sync": "node scripts/sync-content.js"
+  }
+}
+
