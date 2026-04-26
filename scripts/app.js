@@ -130,8 +130,11 @@ function renderProjects() {
           ? `<img src="${escapeHTML(project.image)}" alt="${escapeHTML(project.title)}">`
           : `<div class="project-item__placeholder" aria-hidden="true"><span>${String(index + 1).padStart(2, "0")}</span></div>`;
 
-        const linkMarkup = project.link
-          ? `<a class="project-item__link" href="${escapeHTML(project.link)}" target="_blank" rel="noreferrer">${escapeHTML(project.linkLabel || "Open project")}</a>`
+        const projectLinks = project.links || (project.link ? [{ label: project.linkLabel || "Open project", href: project.link }] : []);
+        const linkMarkup = projectLinks.length
+          ? `<div class="project-item__links">${projectLinks
+              .map((link) => `<a class="project-item__link" href="${escapeHTML(link.href)}" target="_blank" rel="noreferrer">${escapeHTML(link.label)}</a>`)
+              .join("")}</div>`
           : "";
 
         return `

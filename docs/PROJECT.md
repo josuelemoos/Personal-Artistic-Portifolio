@@ -15,7 +15,7 @@ To change texts, contact links, projects, or artworks:
 - Responsive artwork gallery section.
 - Artwork lightbox: clicking an artwork opens the full image above the page without leaving the site or cropping the image.
 - About section.
-- Projects section with optional image and access link.
+- Projects section with optional image and one or more access links.
 - Contact section with configurable links.
 - Simple anchor navigation.
 - Content centralized in the `SITE_DATA` block of this document.
@@ -37,9 +37,10 @@ To change texts, contact links, projects, or artworks:
 - The site does not use a framework, so it can be hosted as static files.
 - To add artworks, duplicate an item inside `works`.
 - To add projects, duplicate an item inside `projects`.
-- In projects, use `image` for the photo/cover, `link` for the access URL, and `linkLabel` for the button text.
+- In projects, use `image` for the photo/cover and `links` for one or more access buttons. Each link item uses `label` and `href`.
+- A project can still use the older single-link fields `link` and `linkLabel`, but new projects should prefer `links`.
 - If an artwork does not have an image yet, leave `image` empty. The site renders a temporary minimalist visual block.
-- If a project does not have an image or link yet, leave `image` or `link` empty. The site renders a temporary visual block and hides the button.
+- If a project does not have an image or links yet, leave `image` empty and use an empty `links` array. The site renders a temporary visual block and hides the buttons.
 
 ## SITE_DATA
 
@@ -107,20 +108,20 @@ Edit only the JSON between the markers.
       "linkLabel": "Read on Amazon"
     },
     {
-      "title": "Cosmic Series",
-      "status": "In development",
-      "description": "A set of visual pieces about imaginary astronomy, ruins, and silence.",
+      "title": "Rascunhos UFC",
+      "status": "Teacher and creator · 2 years",
+      "description": "An educational drawing project I created and have taught for two years, focused on sharing studies, sketches, and art learning with the UFC community.",
       "image": "",
-      "link": "",
-      "linkLabel": "Open project"
-    },
-    {
-      "title": "Study Archive",
-      "status": "Ongoing",
-      "description": "A record of explorations in palette, texture, composition, and visual storytelling.",
-      "image": "",
-      "link": "",
-      "linkLabel": "Open project"
+      "links": [
+        {
+          "label": "Instagram",
+          "href": "https://www.instagram.com/rascunhosufc/"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/@RascunhosUFC"
+        }
+      ]
     }
   ],
   "contact": {

@@ -37,5 +37,5 @@ Each item in `projects` accepts:
 - `status`: current status.
 - `description`: summary.
 - `image`: project photo or cover.
-- `link`: access URL.
-- `linkLabel`: button text.
+- `links`: list of access buttons, each with `label` and `href`.
+- `link` and `linkLabel`: older single-link fields still supported.

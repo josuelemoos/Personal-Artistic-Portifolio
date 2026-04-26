@@ -353,9 +353,15 @@ img {
   font-size: 2rem;
 }
 
+.project-item__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
 .project-item__link {
   width: fit-content;
-  margin-top: 1rem;
 }
 
 .artwork-modal {

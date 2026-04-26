@@ -59,20 +59,20 @@ window.PORTFOLIO_DATA = {
       "linkLabel": "Read on Amazon"
     },
     {
-      "title": "Cosmic Series",
-      "status": "In development",
-      "description": "A set of visual pieces about imaginary astronomy, ruins, and silence.",
+      "title": "Rascunhos UFC",
+      "status": "Teacher and creator · 2 years",
+      "description": "An educational drawing project I created and have taught for two years, focused on sharing studies, sketches, and art learning with the UFC community.",
       "image": "",
-      "link": "",
-      "linkLabel": "Open project"
-    },
-    {
-      "title": "Study Archive",
-      "status": "Ongoing",
-      "description": "A record of explorations in palette, texture, composition, and visual storytelling.",
-      "image": "",
-      "link": "",
-      "linkLabel": "Open project"
+      "links": [
+        {
+          "label": "Instagram",
+          "href": "https://www.instagram.com/rascunhosufc/"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/@RascunhosUFC"
+        }
+      ]
     }
   ],
   "contact": {
